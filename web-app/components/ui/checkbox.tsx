@@ -16,10 +16,12 @@ const Checkbox = React.forwardRef<
         ref={ref}
         {...props}
       />
-      <div className={cn(
-        "flex h-4 w-4 items-center justify-center rounded-sm border border-primary ring-offset-background peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 peer-checked:bg-blue-600 peer-checked:border-blue-600 text-white",
-        className
-      )}>
+      <div
+        className={cn(
+          "flex h-4 w-4 items-center justify-center rounded-sm border border-primary ring-offset-background peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 peer-checked:bg-blue-600 peer-checked:border-blue-600 text-white",
+          className,
+        )}
+      >
         <Check className="h-3 w-3 hidden peer-checked:block" />
       </div>
     </div>
