@@ -29,9 +29,8 @@ jobs:
           cache-dependency-path: web-app/package-lock.json
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
-        # This automatically injects basePath if needed, but Next.js needs code support
-        # We stuck to standard export for now.
 
       - name: Install dependencies
         run: |
@@ -42,6 +41,8 @@ jobs:
         run: |
           cd web-app
           npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
