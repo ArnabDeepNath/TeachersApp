@@ -3,6 +3,7 @@
 import { Header } from "@/components/Header";
 import { BottomNav } from "@/components/BottomNav";
 import { useState } from "react";
+import { Sidebar } from "@/components/Sidebar";
 
 export default function DashboardLayout({
   children,
@@ -13,6 +14,8 @@ export default function DashboardLayout({
 
   return (
     <div className="flex h-screen flex-col bg-gray-50">
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      
       <Header
         title="Teachers App"
         onMenuClick={() => setSidebarOpen(!sidebarOpen)}
