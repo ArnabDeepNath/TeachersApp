@@ -50,28 +50,28 @@ export function BatchCard({
       {/* Actions */}
       <div className="mt-4 grid grid-cols-4 divide-x border-t pt-3">
         <Link
-          href="/dashboard/attendance"
+          href="/attendance"
           className="flex flex-col items-center gap-1 text-center hover:bg-gray-50"
         >
           <Users className="h-5 w-5 text-blue-600" />
           <span className="text-[10px] font-medium text-gray-600">Attend</span>
         </Link>
         <Link
-          href="/dashboard/fees"
+          href="/fees"
           className="flex flex-col items-center gap-1 text-center hover:bg-gray-50"
         >
           <IndianRupee className="h-5 w-5 text-green-600" />
           <span className="text-[10px] font-medium text-gray-600">Fees</span>
         </Link>
         <Link
-          href="/dashboard/tests"
+          href="/tests"
           className="flex flex-col items-center gap-1 text-center hover:bg-gray-50"
         >
           <ClipboardList className="h-5 w-5 text-purple-600" />
           <span className="text-[10px] font-medium text-gray-600">Tests</span>
         </Link>
         <Link
-          href="/dashboard/sms"
+          href="/sms"
           className="flex flex-col items-center gap-1 text-center hover:bg-gray-50"
         >
           <MessageSquare className="h-5 w-5 text-orange-600" />

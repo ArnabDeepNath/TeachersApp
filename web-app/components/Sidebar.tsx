@@ -21,10 +21,10 @@ interface SidebarProps {
 
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const menuItems = [
-    { icon: Home, label: "Home", href: "/dashboard" },
-    { icon: User, label: "Profile", href: "/dashboard/profile" },
-    { icon: CreditCard, label: "Buy License", href: "/dashboard/pricing" },
-    { icon: MessageCircle, label: "SMS Packs", href: "/dashboard/sms" },
+    { icon: Home, label: "Home", href: "/" },
+    { icon: User, label: "Profile", href: "/profile" },
+    { icon: CreditCard, label: "Buy License", href: "/pricing" },
+    { icon: MessageCircle, label: "SMS Packs", href: "/sms" },
     { icon: Share2, label: "Share App", href: "#" },
     { icon: Star, label: "Rate Us", href: "#" },
   ];
