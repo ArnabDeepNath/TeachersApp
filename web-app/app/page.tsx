@@ -67,14 +67,13 @@ export default function LandingPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[400px] lg:max-w-[500px]">
-              {/* Mock Phone Image Placeholder */}
+            <div className="relative mx-auto w-full max-w-[300px] lg:max-w-[350px]">
+              {/* App Screenshot */}
               <div className="relative rounded-[2rem] border-8 border-gray-900 bg-gray-900 overflow-hidden shadow-2xl">
-                <div className="aspect-[9/19] bg-white w-full flex items-center justify-center">
-                  <p className="text-gray-400 font-medium text-center p-8">
-                    App Screenshot Placeholder
-                  </p>
-                </div>
+                 <div className="aspect-[9/18] bg-white w-full flex items-center justify-center overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="./screenshots/1.jpeg" alt="Teachers App Interface" className="w-full h-full object-cover" />
+                 </div>
               </div>
             </div>
           </div>
